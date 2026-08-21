@@ -1,381 +1,188 @@
-/* ===================================
-   KDSR CONSULTATION - script.js
-=================================== */
-
-/* -----------------------------------
-   Loader
------------------------------------ */
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-
-    setTimeout(() => {
-        loader.style.opacity = "0";
-
-        setTimeout(() => {
-            loader.style.display = "none";
-        }, 500);
-
-    }, 1000);
-});
+/* =========================================================
+   KDSR CONSULTATION
+   MAIN JAVASCRIPT
+========================================================= */
 
 
-/* -----------------------------------
-   Scroll Reveal Animation
------------------------------------ */
-const revealElements = document.querySelectorAll(".reveal");
-
-const revealOnScroll = () => {
-
-    revealElements.forEach(el => {
-
-        const windowHeight = window.innerHeight;
-        const top = el.getBoundingClientRect().top;
-
-        if (top < windowHeight - 100) {
-            el.classList.add("active");
-        }
-
-    });
-
-};
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+document.addEventListener("DOMContentLoaded", function () {
 
 
-/* -----------------------------------
-   Animated Counters
------------------------------------ */
-const counters = document.querySelectorAll(".counter");
+    /* =====================================================
+       1. MOBILE NAVIGATION
+    ===================================================== */
 
-const runCounters = () => {
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileNav = document.getElementById("mobileNav");
 
-    counters.forEach(counter => {
 
-        const target =
-            parseInt(counter.dataset.target);
+    if (mobileMenuBtn && mobileNav) {
 
-        const current =
-            parseInt(counter.innerText) || 0;
+        mobileMenuBtn.addEventListener("click", function () {
 
-        const increment =
-            Math.ceil(target / 100);
+            mobileNav.classList.toggle("open");
 
-        const updateCounter = () => {
+            const isOpen = mobileNav.classList.contains("open");
 
-            let value =
-                parseInt(counter.innerText) || 0;
+            mobileMenuBtn.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
 
-            if (value < target) {
+        });
 
-                counter.innerText =
-                    Math.min(
-                        value + increment,
-                        target
-                    );
 
-                setTimeout(updateCounter, 20);
+        /* Close mobile menu after clicking a link */
 
-            } else {
+        const mobileLinks = mobileNav.querySelectorAll("a");
 
-                if (target === 250) {
-                    counter.innerText = "250+";
-                }
+        mobileLinks.forEach(function (link) {
 
-                if (target === 97) {
-                    counter.innerText = "97%";
-                }
+            link.addEventListener("click", function () {
 
-                if (target === 6) {
-                    counter.innerText = "6+";
-                }
+                mobileNav.classList.remove("open");
 
-            }
+                mobileMenuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
-        };
+            });
 
-        updateCounter();
+        });
 
-    });
-
-};
-
-let counterStarted = false;
-
-window.addEventListener("scroll", () => {
-
-    const stats =
-        document.querySelector(".stats");
-
-    if (!stats) return;
-
-    const top =
-        stats.getBoundingClientRect().top;
-
-    if (
-        top < window.innerHeight - 100 &&
-        !counterStarted
-    ) {
-        counterStarted = true;
-        runCounters();
     }
 
-});
+
+    /* =====================================================
+       2. STICKY HEADER SHADOW
+    ===================================================== */
+
+    const siteHeader = document.getElementById("siteHeader");
 
 
-/* -----------------------------------
-   FAQ Accordion
------------------------------------ */
-const faqItems =
-    document.querySelectorAll(".faq-item");
+    function handleHeaderScroll() {
 
-faqItems.forEach(item => {
-
-    const btn =
-        item.querySelector(".faq-question");
-
-    btn.addEventListener("click", () => {
-
-        item.classList.toggle("active");
-
-    });
-
-});
+        if (!siteHeader) return;
 
 
-/* -----------------------------------
-   Testimonials Slider
------------------------------------ */
-const testimonials =
-    document.querySelectorAll(
-        ".testimonial-card"
-    );
+        if (window.scrollY > 20) {
 
-let testimonialIndex = 0;
-
-function showTestimonial(index) {
-
-    testimonials.forEach(card => {
-        card.classList.remove("active");
-    });
-
-    testimonials[index].classList.add(
-        "active"
-    );
-}
-
-if (testimonials.length > 0) {
-
-    setInterval(() => {
-
-        testimonialIndex++;
-
-        if (
-            testimonialIndex >=
-            testimonials.length
-        ) {
-            testimonialIndex = 0;
-        }
-
-        showTestimonial(testimonialIndex);
-
-    }, 5000);
-
-}
-
-
-/* -----------------------------------
-   Mobile Menu
------------------------------------ */
-const menuBtn =
-    document.getElementById("menu-btn");
-
-const navLinks =
-    document.getElementById("nav-links");
-
-if (menuBtn && navLinks) {
-
-    menuBtn.addEventListener("click", () => {
-
-        if (
-            navLinks.style.display === "flex"
-        ) {
-
-            navLinks.style.display = "none";
+            siteHeader.classList.add("scrolled");
 
         } else {
 
-            navLinks.style.display = "flex";
-            navLinks.style.flexDirection =
-                "column";
+            siteHeader.classList.remove("scrolled");
 
         }
 
-    });
-
-}
+    }
 
 
-/* -----------------------------------
-   Contact Form Submission
------------------------------------ */
-const leadForm =
-    document.getElementById("leadForm");
+    window.addEventListener(
+        "scroll",
+        handleHeaderScroll
+    );
 
-if (leadForm) {
+    handleHeaderScroll();
 
-    leadForm.addEventListener(
-        "submit",
-        async function (e) {
 
-            e.preventDefault();
 
-            const formData = {
+    /* =====================================================
+       3. BACK TO TOP BUTTON
+    ===================================================== */
 
-                name:
-                    document.getElementById(
-                        "name"
-                    ).value,
+    const backToTop = document.getElementById("backToTop");
 
-                phone:
-                    document.getElementById(
-                        "phone"
-                    ).value,
 
-                email:
-                    document.getElementById(
-                        "email"
-                    ).value,
+    function handleBackToTop() {
 
-                message:
-                    document.getElementById(
-                        "message"
-                    ).value
+        if (!backToTop) return;
 
-            };
 
-            try {
+        if (window.scrollY > 500) {
 
-                if (
-                    typeof CRM_CONFIG !==
-                        "undefined" &&
-                    CRM_CONFIG.googleScriptURL &&
-                    !CRM_CONFIG.googleScriptURL.includes(
-                        "PASTE_YOUR"
-                    )
-                ) {
+            backToTop.classList.add("show");
 
-                    await fetch(
-                        CRM_CONFIG.googleScriptURL,
-                        {
-                            method: "POST",
-                            mode: "no-cors",
-                            headers: {
-                                "Content-Type":
-                                    "application/json"
-                            },
-                            body: JSON.stringify(
-                                formData
-                            )
-                        }
-                    );
+        } else {
 
-                }
-
-                /* Show Success Modal */
-                const modal =
-                    document.getElementById(
-                        "successModal"
-                    );
-
-                if (modal) {
-                    modal.style.display =
-                        "flex";
-                }
-
-                /* Open WhatsApp */
-                const message =
-                    `Hello KDSR Consultation.%0A%0A` +
-                    `Name: ${formData.name}%0A` +
-                    `Phone: ${formData.phone}%0A` +
-                    `Query: ${formData.message}`;
-
-                window.open(
-                    `https://wa.me/917973666876?text=${message}`,
-                    "_blank"
-                );
-
-                leadForm.reset();
-
-            } catch (err) {
-
-                alert(
-                    "Submission failed. Please try again."
-                );
-
-                console.error(err);
-
-            }
+            backToTop.classList.remove("show");
 
         }
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        handleBackToTop
     );
 
-}
+    handleBackToTop();
 
 
-/* -----------------------------------
-   Close Success Modal
------------------------------------ */
-const closeModal =
-    document.getElementById(
-        "closeModal"
-    );
+    if (backToTop) {
 
-if (closeModal) {
-
-    closeModal.addEventListener(
-        "click",
-        () => {
-
-            document.getElementById(
-                "successModal"
-            ).style.display = "none";
-
-        }
-    );
-
-}
-
-
-/* -----------------------------------
-   Smooth Navigation
------------------------------------ */
-document
-    .querySelectorAll('a[href^="#"]')
-    .forEach(anchor => {
-
-        anchor.addEventListener(
+        backToTop.addEventListener(
             "click",
-            function (e) {
+            function () {
 
-                e.preventDefault();
+                window.scrollTo({
 
-                const target =
-                    document.querySelector(
-                        this.getAttribute(
-                            "href"
-                        )
-                    );
+                    top: 0,
 
-                if (target) {
+                    behavior: "smooth"
 
-                    target.scrollIntoView({
-                        behavior: "smooth"
-                    });
-
-                }
+                });
 
             }
         );
 
-    });
+    }
+
+
+
+    /* =====================================================
+       4. AUTOMATIC CURRENT YEAR
+    ===================================================== */
+
+    const currentYear =
+        document.getElementById("currentYear");
+
+
+    if (currentYear) {
+
+        currentYear.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+
+    /* =====================================================
+       5. CLOSE MOBILE MENU ON WINDOW RESIZE
+    ===================================================== */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (
+                window.innerWidth > 850 &&
+                mobileNav &&
+                mobileMenuBtn
+            ) {
+
+                mobileNav.classList.remove("open");
+
+                mobileMenuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+
+});
