@@ -224,4 +224,69 @@ faqItems.forEach(function (item) {
     }
 
 });
+});    window.addEventListener(
+        "resize",
+        function () {
+
+            if (
+                window.innerWidth > 850 &&
+                mobileNav &&
+                mobileMenuBtn
+            ) {
+
+                mobileNav.classList.remove("open");
+
+                mobileMenuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       FAQ ACCORDION
+    ===================================================== */
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(function (item) {
+
+        const question =
+            item.querySelector(".faq-question");
+
+        if (question) {
+
+            question.addEventListener(
+                "click",
+                function () {
+
+                    const isActive =
+                        item.classList.contains("active");
+
+
+                    faqItems.forEach(function (faq) {
+
+                        faq.classList.remove("active");
+
+                    });
+
+
+                    if (!isActive) {
+
+                        item.classList.add("active");
+
+                    }
+
+                }
+            );
+
+        }
+
+    );
+
+
 });
