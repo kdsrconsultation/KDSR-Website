@@ -1,141 +1,94 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
+```
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta name="theme-color" content="#0B2A4A">
+<meta
+    name="description"
+    content="Professional website development and digital solutions by KDSR Consultation. Modern, responsive and business-focused websites designed to help your business grow."
+>
 
-    <meta name="description"
-        content="Professional website development and digital solutions for businesses, professionals and organisations. Modern, responsive and business-focused websites by KDSR Consultation.">
+<title>
+    Website Development & Digital Solutions | KDSR Consultation
+</title>
 
-    <meta name="keywords"
-        content="Website Development, Business Website, Professional Website, Responsive Website, Website Redesign, KDSR Consultation">
 
-    <meta name="robots" content="index, follow">
+<!-- FONTS -->
 
-    <link rel="canonical"
-        href="https://kdsrconsultation.com/website-development.html">
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+>
 
-    <meta property="og:title"
-        content="Website Development & Digital Solutions | KDSR Consultation">
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
 
-    <meta property="og:description"
-        content="Professional, modern and responsive websites designed to strengthen your brand and generate enquiries.">
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+>
 
-    <meta property="og:type"
-        content="website">
 
-    <meta property="og:url"
-        content="https://kdsrconsultation.com/website-development.html">
+<!-- STYLESHEET -->
 
-    <meta property="og:image"
-        content="https://kdsrconsultation.com/logo.png">
-
-    <link rel="icon"
-        type="image/png"
-        href="logo.png">
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="style.css">
-
-    <title>
-        Website Development & Digital Solutions | KDSR Consultation
-    </title>
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+```
 
 </head>
 
-
 <body>
 
+```
+<!-- =====================================================
+     HEADER
+====================================================== -->
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
+<header
+    class="site-header"
+    id="siteHeader"
+>
 
-    <header class="site-header"
-        id="siteHeader">
-
-        <div class="container nav-wrapper">
-
-
-            <a href="index.html"
-                class="brand"
-                aria-label="KDSR Consultation Home">
-
-                <img src="logo.png"
-                    alt="KDSR Consultation Logo"
-                    class="brand-logo">
-
-                <div class="brand-text">
-
-                    <strong>KDSR</strong>
-
-                    <span>CONSULTATION</span>
-
-                </div>
-
-            </a>
+    <div class="container header-container">
 
 
-            <nav class="desktop-nav"
-                aria-label="Main Navigation">
+        <!-- LOGO -->
 
-                <a href="index.html">
-                    Home
-                </a>
+        <a
+            href="index.html"
+            class="brand"
+            aria-label="KDSR Consultation Home"
+        >
 
-                <a href="share-recovery.html">
-                    Share Recovery
-                </a>
+            <img
+                src="images/logo.png"
+                alt="KDSR Consultation"
+                class="brand-logo"
+            >
 
-                <a href="website-development.html"
-                    class="active">
-                    Website Solutions
-                </a>
-
-                <a href="index.html#about">
-                    About
-                </a>
-
-                <a href="#contact"
-                    class="nav-cta">
-                    Start a Project
-                </a>
-
-            </nav>
+        </a>
 
 
-            <button class="mobile-menu-btn"
-                id="mobileMenuBtn"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
+        <!-- DESKTOP NAVIGATION -->
 
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </div>
-
-
-        <nav class="mobile-nav"
-            id="mobileNav">
+        <nav
+            class="desktop-nav"
+            aria-label="Primary Navigation"
+        >
 
             <a href="index.html">
                 Home
@@ -145,7 +98,10 @@
                 Share Recovery
             </a>
 
-            <a href="website-development.html">
+            <a
+                href="website-development.html"
+                class="active"
+            >
                 Website Solutions
             </a>
 
@@ -153,634 +109,1033 @@
                 About
             </a>
 
-            <a href="#contact">
-                Start a Project
-            </a>
-
         </nav>
 
-    </header>
+
+        <!-- HEADER CTA -->
+
+        <a
+            href="#contact"
+            class="header-cta"
+        >
+            Start a Project
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open Menu"
+            aria-expanded="false"
+            type="button"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <nav
+        class="mobile-nav"
+        id="mobileNav"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="share-recovery.html">
+            Share Recovery
+        </a>
+
+        <a
+            href="website-development.html"
+            class="active"
+        >
+            Website Solutions
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a
+            href="#contact"
+            class="mobile-nav-cta"
+        >
+            Start a Project
+        </a>
+
+    </nav>
+
+</header>
 
 
 
-    <main>
+<main>
 
 
-        <!-- =====================================================
-             HERO
-        ====================================================== -->
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
 
-        <section class="web-hero">
+    <section class="wd-hero">
 
-            <div class="web-hero-grid"></div>
-
-            <div class="web-glow web-glow-one"></div>
-            <div class="web-glow web-glow-two"></div>
-
-
-            <div class="container web-hero-content">
+        <div class="wd-hero-grid"></div>
+        <div class="wd-hero-glow glow-one"></div>
+        <div class="wd-hero-glow glow-two"></div>
 
 
-                <div class="hero-eyebrow">
+        <div class="container wd-hero-container">
 
-                    <span class="eyebrow-line"></span>
 
+            <!-- HERO CONTENT -->
+
+            <div class="wd-hero-content">
+
+                <div class="eyebrow-light">
                     WEBSITE DEVELOPMENT & DIGITAL SOLUTIONS
-
                 </div>
 
 
                 <h1>
-
                     Websites Built to
-                    <span>Move Your Business Forward.</span>
-
+                    <span>
+                        Move Your Business Forward.
+                    </span>
                 </h1>
 
 
-                <p>
+                <p class="wd-hero-description">
 
-                    Modern, professional and responsive websites
-                    designed to strengthen your brand, showcase
-                    your services and turn visitors into genuine
-                    business enquiries.
+                    Modern, strategic and conversion-focused websites
+                    designed to strengthen your digital presence,
+                    build credibility and turn visitors into enquiries.
 
                 </p>
 
 
-                <div class="web-hero-actions">
+                <div class="wd-hero-actions">
 
-                    <a href="#solutions"
-                        class="btn btn-primary">
+                    <a
+                        href="#contact"
+                        class="btn btn-gold"
+                    >
+                        Start Your Project
+                        <span>→</span>
+                    </a>
 
+
+                    <a
+                        href="#solutions"
+                        class="btn btn-outline-light"
+                    >
                         Explore Solutions
-
-                        <span class="btn-arrow">
-                            →
-                        </span>
-
-                    </a>
-
-
-                    <a href="#contact"
-                        class="btn btn-outline">
-
-                        Discuss Your Project
-
-                        <span class="btn-arrow">
-                            →
-                        </span>
-
                     </a>
 
                 </div>
 
 
-                <div class="web-hero-trust">
+                <!-- HERO FEATURES -->
 
-                    <div>
+                <div class="wd-hero-features">
 
-                        <strong>
-                            Responsive
-                        </strong>
+                    <div class="wd-hero-feature">
 
-                        <span>
-                            Every Screen
-                        </span>
+                        <div class="wd-feature-icon">
+                            ✓
+                        </div>
 
-                    </div>
+                        <div>
 
-                    <div>
+                            <strong>
+                                Responsive Design
+                            </strong>
 
-                        <strong>
-                            Business-Focused
-                        </strong>
+                            <span>
+                                Built beautifully for every screen.
+                            </span>
 
-                        <span>
-                            Strategic Design
-                        </span>
+                        </div>
 
                     </div>
 
-                    <div>
 
-                        <strong>
-                            Built to Convert
-                        </strong>
+                    <div class="wd-hero-feature">
 
-                        <span>
-                            Clear User Journey
-                        </span>
+                        <div class="wd-feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Business Focused
+                            </strong>
+
+                            <span>
+                                Designed around your goals.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="wd-hero-feature">
+
+                        <div class="wd-feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Built to Convert
+                            </strong>
+
+                            <span>
+                                Clear journeys that drive enquiries.
+                            </span>
+
+                        </div>
 
                     </div>
 
                 </div>
-
 
             </div>
 
-        </section>
 
 
+            <!-- HERO VISUAL -->
 
-        <!-- =====================================================
-             INTRO / VALUE SECTION
-        ====================================================== -->
-
-        <section class="web-value-section">
-
-            <div class="container web-value-grid">
+            <div class="wd-hero-visual">
 
 
-                <div class="web-value-heading">
+                <!-- BACKGROUND RING -->
 
-                    <div class="eyebrow">
-                        YOUR DIGITAL FIRST IMPRESSION
+                <div class="wd-visual-ring ring-one"></div>
+                <div class="wd-visual-ring ring-two"></div>
+
+
+                <!-- MAIN WEBSITE MOCKUP -->
+
+                <div class="wd-browser-window">
+
+                    <div class="wd-browser-top">
+
+                        <div class="wd-browser-dots">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="wd-browser-url">
+                            yourbusiness.com
+                        </div>
+
                     </div>
 
+
+                    <div class="wd-browser-content">
+
+
+                        <div class="wd-demo-nav">
+
+                            <div class="wd-demo-logo">
+                                BRAND
+                            </div>
+
+
+                            <div class="wd-demo-links">
+
+                                <span>Home</span>
+                                <span>About</span>
+                                <span>Services</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="wd-demo-hero">
+
+                            <div class="wd-demo-copy">
+
+                                <span class="wd-demo-tag">
+                                    DIGITAL PRESENCE
+                                </span>
+
+
+                                <h3>
+                                    Built for
+                                    <strong>
+                                        Growth.
+                                    </strong>
+                                </h3>
+
+
+                                <p>
+                                    A modern digital experience
+                                    designed around your business.
+                                </p>
+
+
+                                <div class="wd-demo-button">
+                                    Get Started
+                                </div>
+
+                            </div>
+
+
+                            <div class="wd-demo-art">
+
+                                <div class="demo-circle-one"></div>
+                                <div class="demo-circle-two"></div>
+
+                                <div class="demo-card-shape"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="wd-demo-stats">
+
+                            <div>
+
+                                <strong>
+                                    24/7
+                                </strong>
+
+                                <span>
+                                    Online Presence
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    Mobile
+                                </strong>
+
+                                <span>
+                                    Responsive
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    Focused
+                                </strong>
+
+                                <span>
+                                    On Growth
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FLOATING ANALYTICS CARD -->
+
+                <div class="wd-floating-card analytics-card">
+
+                    <div class="floating-card-label">
+                        DIGITAL GROWTH
+                    </div>
+
+
+                    <div class="analytics-value">
+                        +68%
+                    </div>
+
+
+                    <div class="analytics-text">
+                        Better online visibility
+                    </div>
+
+
+                    <div class="mini-chart">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FLOATING MOBILE MOCKUP -->
+
+                <div class="wd-mobile-preview">
+
+                    <div class="wd-mobile-top">
+
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="wd-mobile-content">
+
+                        <div class="mobile-brand">
+                            BRAND
+                        </div>
+
+
+                        <div class="mobile-heading">
+                            Your Business.
+                            <strong>
+                                Online.
+                            </strong>
+                        </div>
+
+
+                        <div class="mobile-lines">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="mobile-button"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WHY YOUR WEBSITE MATTERS
+    ====================================================== -->
+
+    <section class="wd-impact-section">
+
+        <div class="container">
+
+
+            <div class="section-intro wd-impact-intro">
+
+                <div>
+
+                    <div class="eyebrow">
+                        YOUR DIGITAL FOUNDATION
+                    </div>
+
+
                     <h2>
-
-                        Your website should do
-                        <span>more than just exist.</span>
-
+                        Your Website Is More Than
+                        <span>
+                            Just an Online Presence.
+                        </span>
                     </h2>
 
                 </div>
 
 
-                <div class="web-value-content">
+                <p>
 
-                    <p>
+                    For many potential customers, your website is the
+                    first serious interaction they have with your
+                    business. A well-designed website builds trust,
+                    communicates value and creates a clear path
+                    towards taking action.
 
-                        A website is often the first serious
-                        interaction a potential customer has
-                        with your business. An outdated or
-                        poorly structured website can weaken
-                        that first impression.
-
-                    </p>
-
-                    <p>
-
-                        We create websites with a clear focus
-                        on presentation, credibility, usability
-                        and enquiries—so your online presence
-                        works as a practical business asset.
-
-                    </p>
-
-                </div>
-
+                </p>
 
             </div>
 
 
-            <div class="container web-benefits-grid">
+            <div class="wd-impact-grid">
 
 
-                <div class="web-benefit">
+                <article class="wd-impact-card">
 
-                    <span class="benefit-number">
+                    <div class="wd-card-number">
                         01
-                    </span>
+                    </div>
+
+
+                    <div class="wd-impact-icon">
+                        ◈
+                    </div>
+
 
                     <h3>
                         Build Credibility
                     </h3>
 
+
                     <p>
-                        Present your business with a professional
-                        and trustworthy digital presence.
+
+                        Present your business professionally and give
+                        potential customers confidence in your brand.
+
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="web-benefit">
 
-                    <span class="benefit-number">
+                <article class="wd-impact-card">
+
+                    <div class="wd-card-number">
                         02
-                    </span>
+                    </div>
+
+
+                    <div class="wd-impact-icon">
+                        ◌
+                    </div>
+
 
                     <h3>
                         Stay Available 24/7
                     </h3>
 
+
                     <p>
-                        Give potential customers access to your
-                        business information at any time.
+
+                        Give customers access to your business,
+                        services and information at any time.
+
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="web-benefit">
 
-                    <span class="benefit-number">
+                <article class="wd-impact-card">
+
+                    <div class="wd-card-number">
                         03
-                    </span>
+                    </div>
+
+
+                    <div class="wd-impact-icon">
+                        ↗
+                    </div>
+
 
                     <h3>
                         Generate Enquiries
                     </h3>
 
+
                     <p>
-                        Create clear paths for visitors to
-                        contact, enquire and take action.
+
+                        Create clear user journeys that encourage
+                        visitors to contact and engage with you.
+
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="web-benefit">
 
-                    <span class="benefit-number">
+                <article class="wd-impact-card">
+
+                    <div class="wd-card-number">
                         04
-                    </span>
+                    </div>
+
+
+                    <div class="wd-impact-icon">
+                        ✦
+                    </div>
+
 
                     <h3>
                         Strengthen Your Brand
                     </h3>
 
+
                     <p>
-                        Maintain a consistent and professional
-                        presentation of your business online.
+
+                        Create a consistent and professional digital
+                        identity that helps your business stand out.
+
                     </p>
 
-                </div>
-
+                </article>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
 
-        <!-- =====================================================
-             SOLUTIONS
-        ====================================================== -->
+    <!-- =====================================================
+         WHAT WE BUILD
+    ====================================================== -->
 
-        <section class="web-solutions-section"
-            id="solutions">
+    <section class="wd-build-section">
 
-            <div class="container">
+        <div class="container">
 
 
-                <div class="section-heading centered">
+            <div class="wd-section-heading">
 
-                    <div class="eyebrow">
-                        WHAT WE BUILD
+                <div class="eyebrow">
+                    WHAT WE BUILD
+                </div>
+
+
+                <h2>
+                    Digital Experiences Designed
+                    <span>
+                        Around Your Business.
+                    </span>
+                </h2>
+
+
+                <p>
+
+                    Every business has different goals. We create
+                    websites and digital solutions tailored to your
+                    requirements, audience and growth objectives.
+
+                </p>
+
+            </div>
+
+
+            <div class="wd-build-grid">
+
+
+                <article class="wd-build-card">
+
+                    <div class="wd-build-top">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div class="wd-build-symbol">
+                            ◫
+                        </div>
+
                     </div>
 
-                    <h2>
 
-                        Digital solutions designed
-                        <span>around your business.</span>
+                    <h3>
+                        Business Websites
+                    </h3>
 
-                    </h2>
 
                     <p>
 
-                        From a focused professional website
-                        to a complete business presence,
-                        each project is structured around
-                        your specific requirements.
+                        Professional websites designed to represent
+                        your company, services and brand with clarity.
 
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="web-solutions-grid">
 
+                <article class="wd-build-card">
 
-                    <article class="web-solution-card">
+                    <div class="wd-build-top">
 
-                        <div class="web-solution-top">
+                        <span>
+                            02
+                        </span>
 
-                            <span>
-                                01
-                            </span>
-
-                            <div class="solution-symbol">
-                                ◫
-                            </div>
-
+                        <div class="wd-build-symbol">
+                            ◉
                         </div>
 
-                        <h3>
-                            Business Websites
-                        </h3>
-
-                        <p>
-
-                            Professional websites designed to
-                            present your company, services,
-                            expertise and contact information.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
-                    <article class="web-solution-card">
+                    <h3>
+                        Portfolio Websites
+                    </h3>
 
-                        <div class="web-solution-top">
 
-                            <span>
-                                02
-                            </span>
+                    <p>
 
-                            <div class="solution-symbol">
-                                ◇
-                            </div>
+                        Showcase your work, expertise and achievements
+                        with a visually compelling online presence.
 
+                    </p>
+
+                </article>
+
+
+
+                <article class="wd-build-card">
+
+                    <div class="wd-build-top">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div class="wd-build-symbol">
+                            ◇
                         </div>
 
-                        <h3>
-                            Portfolio Websites
-                        </h3>
-
-                        <p>
-
-                            Showcase your work, experience,
-                            achievements and professional
-                            identity with clarity.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
-                    <article class="web-solution-card">
+                    <h3>
+                        Service Websites
+                    </h3>
 
-                        <div class="web-solution-top">
 
-                            <span>
-                                03
-                            </span>
+                    <p>
 
-                            <div class="solution-symbol">
-                                ◎
-                            </div>
+                        Clearly communicate your services and guide
+                        potential clients towards making an enquiry.
 
+                    </p>
+
+                </article>
+
+
+
+                <article class="wd-build-card">
+
+                    <div class="wd-build-top">
+
+                        <span>
+                            04
+                        </span>
+
+                        <div class="wd-build-symbol">
+                            ↗
                         </div>
 
-                        <h3>
-                            Service Business Websites
-                        </h3>
-
-                        <p>
-
-                            Help customers understand your
-                            services and make it easy for
-                            them to contact you.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
-                    <article class="web-solution-card">
+                    <h3>
+                        Landing Pages
+                    </h3>
 
-                        <div class="web-solution-top">
 
-                            <span>
-                                04
-                            </span>
+                    <p>
 
-                            <div class="solution-symbol">
-                                ↗
-                            </div>
+                        Focused pages built around a specific service,
+                        campaign, product or conversion goal.
 
+                    </p>
+
+                </article>
+
+
+
+                <article class="wd-build-card">
+
+                    <div class="wd-build-top">
+
+                        <span>
+                            05
+                        </span>
+
+                        <div class="wd-build-symbol">
+                            ↻
                         </div>
 
-                        <h3>
-                            Landing Pages
-                        </h3>
-
-                        <p>
-
-                            Focused pages designed around a
-                            specific service, campaign,
-                            product or conversion goal.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
-                    <article class="web-solution-card">
+                    <h3>
+                        Website Redesign
+                    </h3>
 
-                        <div class="web-solution-top">
 
-                            <span>
-                                05
-                            </span>
+                    <p>
 
-                            <div class="solution-symbol">
-                                ↻
-                            </div>
+                        Transform an outdated website into a modern,
+                        professional and business-focused experience.
 
+                    </p>
+
+                </article>
+
+
+
+                <article class="wd-build-card">
+
+                    <div class="wd-build-top">
+
+                        <span>
+                            06
+                        </span>
+
+                        <div class="wd-build-symbol">
+                            ✦
                         </div>
 
-                        <h3>
-                            Website Redesign
-                        </h3>
-
-                        <p>
-
-                            Modernise an outdated website with
-                            improved design, structure and
-                            user experience.
-
-                        </p>
-
-                    </article>
+                    </div>
 
 
-                    <article class="web-solution-card">
-
-                        <div class="web-solution-top">
-
-                            <span>
-                                06
-                            </span>
-
-                            <div class="solution-symbol">
-                                + 
-                            </div>
-
-                        </div>
-
-                        <h3>
-                            Website Maintenance
-                        </h3>
-
-                        <p>
-
-                            Ongoing assistance for updates,
-                            improvements and maintaining
-                            your website over time.
-
-                        </p>
-
-                    </article>
+                    <h3>
+                        Custom Solutions
+                    </h3>
 
 
-                </div>
+                    <p>
 
+                        Tailored digital solutions designed around
+                        specialised business requirements and goals.
+
+                    </p>
+
+                </article>
 
             </div>
 
-        </section>
+        </div>
 
-
-
+    </section>
+```
         <!-- =====================================================
-             PROCESS
+             DEVELOPMENT PROCESS
         ====================================================== -->
 
-        <section class="web-process-section">
+        <section class="wd-process-section">
 
             <div class="container">
 
 
-                <div class="web-process-header">
+                <div class="wd-process-header">
 
                     <div>
 
-                        <div class="eyebrow">
+                        <div class="eyebrow-light">
                             HOW WE WORK
                         </div>
 
+
                         <h2>
-
-                            From an idea to
-                            <span>a live website.</span>
-
+                            From an Idea to a
+                            <span>
+                                Professional Digital Presence.
+                            </span>
                         </h2>
 
                     </div>
 
+
                     <p>
 
-                        A simple and transparent development
-                        process designed to keep the project
-                        organised from the first discussion
-                        through to launch.
+                        Our process is designed to keep everything clear,
+                        structured and focused on creating a website that
+                        supports your business objectives.
 
                     </p>
 
                 </div>
 
 
-                <div class="web-process-list">
+                <div class="wd-process-list">
 
 
-                    <div class="web-process-item">
+                    <article class="wd-process-item">
 
-                        <div class="web-process-number">
+                        <div class="wd-process-number">
                             01
                         </div>
 
-                        <div class="web-process-title">
+
+                        <div class="wd-process-title">
 
                             <h3>
-                                Understand Your Business
+                                Discover
                             </h3>
+
+                            <span>
+                                Understanding your business
+                            </span>
 
                         </div>
 
+
                         <p>
 
-                            We begin by understanding your
-                            business, services, customers
-                            and the purpose of the website.
+                            We begin by understanding your business,
+                            services, target audience and the purpose of
+                            your website.
 
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="web-process-item">
 
-                        <div class="web-process-number">
+                    <article class="wd-process-item">
+
+                        <div class="wd-process-number">
                             02
                         </div>
 
-                        <div class="web-process-title">
+
+                        <div class="wd-process-title">
 
                             <h3>
-                                Plan the Structure
+                                Strategy
                             </h3>
+
+                            <span>
+                                Planning the right structure
+                            </span>
 
                         </div>
 
+
                         <p>
 
-                            We organise the pages, content
-                            flow and user journey before
-                            development begins.
+                            We plan the website structure, content flow
+                            and user journey to create a clear and
+                            purposeful digital experience.
 
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="web-process-item">
 
-                        <div class="web-process-number">
+                    <article class="wd-process-item">
+
+                        <div class="wd-process-number">
                             03
                         </div>
 
-                        <div class="web-process-title">
+
+                        <div class="wd-process-title">
 
                             <h3>
-                                Design & Development
+                                Design
                             </h3>
+
+                            <span>
+                                Creating your visual experience
+                            </span>
 
                         </div>
 
+
                         <p>
 
-                            The website is designed and
-                            developed with attention to
-                            usability, responsiveness and
-                            presentation.
+                            Your website is designed around a clean,
+                            modern and professional visual identity that
+                            reflects your business.
 
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="web-process-item">
 
-                        <div class="web-process-number">
+                    <article class="wd-process-item">
+
+                        <div class="wd-process-number">
                             04
                         </div>
 
-                        <div class="web-process-title">
+
+                        <div class="wd-process-title">
 
                             <h3>
-                                Review & Launch
+                                Develop
                             </h3>
+
+                            <span>
+                                Bringing the experience to life
+                            </span>
 
                         </div>
 
+
                         <p>
 
-                            After review and final adjustments,
-                            the website is prepared for
-                            launch and public access.
+                            The approved design is developed into a
+                            responsive website that works smoothly across
+                            desktop, tablet and mobile devices.
 
                         </p>
 
-                    </div>
+                    </article>
 
+
+
+                    <article class="wd-process-item">
+
+                        <div class="wd-process-number">
+                            05
+                        </div>
+
+
+                        <div class="wd-process-title">
+
+                            <h3>
+                                Launch
+                            </h3>
+
+                            <span>
+                                Going live with confidence
+                            </span>
+
+                        </div>
+
+
+                        <p>
+
+                            After final checks and testing, your website
+                            is prepared for launch and made ready for your
+                            customers and audience.
+
+                        </p>
+
+                    </article>
 
                 </div>
-
 
             </div>
 
@@ -792,173 +1147,217 @@
              WHAT YOU GET
         ====================================================== -->
 
-        <section class="web-included-section">
+        <section class="wd-included-section">
 
-            <div class="container web-included-grid">
+            <div class="container">
 
 
-                <div class="web-included-content">
+                <div class="wd-included-grid">
 
-                    <div class="eyebrow">
-                        WHAT YOU GET
+
+                    <div class="wd-included-content">
+
+                        <div class="eyebrow">
+                            WHAT YOU GET
+                        </div>
+
+
+                        <h2>
+                            Built for More Than
+                            <span>
+                                Just Looking Good.
+                            </span>
+                        </h2>
+
+
+                        <p>
+
+                            Every project is approached with the goal of
+                            creating a website that is professional,
+                            practical and ready to support your business
+                            online.
+
+                        </p>
+
+
+                        <a
+                            href="#contact"
+                            class="btn btn-primary"
+                        >
+                            Discuss Your Requirements
+                            <span>→</span>
+                        </a>
+
                     </div>
 
-                    <h2>
-
-                        Everything required for a
-                        <span>professional start.</span>
-
-                    </h2>
-
-                    <p>
-
-                        Every project is different, but our
-                        websites are designed around the
-                        essential elements needed for a strong
-                        and practical online presence.
-
-                    </p>
 
 
-                    <a href="#contact"
-                        class="btn btn-gold">
+                    <div class="wd-included-list">
 
-                        Discuss Your Website
 
-                        <span class="btn-arrow">
-                            →
-                        </span>
+                        <article class="wd-included-item">
 
-                    </a>
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Responsive Design
+                                </h3>
+
+                                <p>
+
+                                    Your website is designed to adapt
+                                    smoothly across desktop, tablet and
+                                    mobile devices.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="wd-included-item">
+
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Premium User Experience
+                                </h3>
+
+                                <p>
+
+                                    Clean layouts and intuitive navigation
+                                    designed to make information easy to
+                                    explore.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="wd-included-item">
+
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Contact & Enquiry Integration
+                                </h3>
+
+                                <p>
+
+                                    Clear contact options and enquiry
+                                    points designed to help potential
+                                    customers reach you.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="wd-included-item">
+
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    WhatsApp Integration
+                                </h3>
+
+                                <p>
+
+                                    Make it easy for visitors to start a
+                                    conversation directly with your
+                                    business.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="wd-included-item">
+
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    SEO-Ready Structure
+                                </h3>
+
+                                <p>
+
+                                    A properly structured foundation that
+                                    supports search engine visibility and
+                                    future optimisation.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="wd-included-item">
+
+                            <div class="wd-included-icon">
+                                ✓
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Deployment Support
+                                </h3>
+
+                                <p>
+
+                                    Assistance with taking your completed
+                                    website live and making it accessible
+                                    to your audience.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
-
-
-                <div class="included-checklist">
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Custom Website Design
-                            </h3>
-
-                            <p>
-                                A design tailored to your
-                                business and brand identity.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Mobile Responsive Layout
-                            </h3>
-
-                            <p>
-                                Designed to work effectively
-                                across desktop and mobile devices.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Contact Integration
-                            </h3>
-
-                            <p>
-                                Clear contact options including
-                                forms, email or WhatsApp.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Basic SEO Structure
-                            </h3>
-
-                            <p>
-                                A clean structure designed to
-                                support search engine visibility.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Optimised Website Structure
-                            </h3>
-
-                            <p>
-                                Attention to clean layout,
-                                navigation and user experience.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="included-item">
-
-                        <span>✓</span>
-
-                        <div>
-
-                            <h3>
-                                Launch Assistance
-                            </h3>
-
-                            <p>
-                                Guidance for connecting your
-                                domain and publishing the website.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
 
             </div>
 
@@ -967,63 +1366,77 @@
 
 
         <!-- =====================================================
-             PACKAGES
+             WEBSITE SOLUTIONS
         ====================================================== -->
 
-        <section class="web-packages-section">
+        <section
+            class="wd-solutions-section"
+            id="solutions"
+        >
 
             <div class="container">
 
 
-                <div class="section-heading centered">
+                <div class="wd-section-heading centered-heading">
 
                     <div class="eyebrow">
-                        FLEXIBLE SOLUTIONS
+                        WEBSITE SOLUTIONS
                     </div>
 
+
                     <h2>
-
-                        Built for different
-                        <span>business requirements.</span>
-
+                        Choose the Right Starting Point
+                        <span>
+                            for Your Business.
+                        </span>
                     </h2>
+
 
                     <p>
 
-                        Every business has different goals.
-                        We can recommend a suitable structure
-                        based on your requirements.
+                        Every project is different. These options provide
+                        a simple starting point based on your business
+                        requirements and digital goals.
 
                     </p>
 
                 </div>
 
 
-                <div class="web-packages-grid">
+                <div class="wd-solutions-grid">
 
 
-                    <article class="web-package-card">
+                    <!-- ESSENTIAL -->
 
-                        <span class="package-label">
-                            STARTER
-                        </span>
+                    <article class="wd-package-card">
+
+                        <div class="wd-package-label">
+                            ESSENTIAL
+                        </div>
+
 
                         <h3>
-                            Professional Presence
+                            A Professional Start
                         </h3>
+
 
                         <p>
 
-                            Suitable for professionals,
-                            consultants and small businesses
-                            establishing an online presence.
+                            Ideal for individuals and small businesses
+                            looking to establish a clean and professional
+                            online presence.
 
                         </p>
+
 
                         <ul>
 
                             <li>
-                                Professional Design
+                                Professional Website Design
+                            </li>
+
+                            <li>
+                                Mobile Responsive Layout
                             </li>
 
                             <li>
@@ -1031,109 +1444,133 @@
                             </li>
 
                             <li>
-                                Mobile Responsive
+                                Contact & Enquiry Section
                             </li>
 
                             <li>
-                                Contact Integration
+                                Basic Deployment Support
                             </li>
 
                         </ul>
 
-                        <a href="#contact"
-                            class="package-link">
 
-                            Discuss Your Requirement
+                        <a
+                            href="#contact"
+                            class="wd-package-link"
+                        >
+                            Discuss This Option
                             <span>→</span>
-
                         </a>
 
                     </article>
 
 
-                    <article class="web-package-card featured-package">
 
-                        <div class="featured-label">
+                    <!-- PROFESSIONAL -->
+
+                    <article
+                        class="wd-package-card wd-featured-package"
+                    >
+
+                        <div class="wd-featured-label">
                             RECOMMENDED
                         </div>
 
-                        <span class="package-label">
-                            BUSINESS
-                        </span>
+
+                        <div class="wd-package-label">
+                            PROFESSIONAL
+                        </div>
+
 
                         <h3>
-                            Complete Business Website
+                            Built for Business Growth
                         </h3>
+
 
                         <p>
 
-                            Designed for businesses requiring
-                            multiple pages, stronger service
-                            presentation and enquiry generation.
+                            Designed for businesses that require a stronger,
+                            more strategic and more comprehensive digital
+                            presence.
 
                         </p>
+
 
                         <ul>
 
                             <li>
-                                Multi-Page Website
+                                Premium Custom Design
                             </li>
 
                             <li>
-                                Custom Service Sections
+                                Multi-Section Website Structure
                             </li>
 
                             <li>
-                                Lead Generation Features
+                                Mobile & Tablet Optimisation
                             </li>
 
                             <li>
-                                SEO-Friendly Structure
+                                WhatsApp Integration
                             </li>
 
                             <li>
-                                WhatsApp & Contact Integration
+                                Contact & Lead Generation
+                            </li>
+
+                            <li>
+                                SEO-Ready Foundation
+                            </li>
+
+                            <li>
+                                Deployment Assistance
                             </li>
 
                         </ul>
 
-                        <a href="#contact"
-                            class="package-link">
 
-                            Discuss Your Requirement
+                        <a
+                            href="#contact"
+                            class="wd-package-link"
+                        >
+                            Discuss This Option
                             <span>→</span>
-
                         </a>
 
                     </article>
 
 
-                    <article class="web-package-card">
 
-                        <span class="package-label">
+                    <!-- CUSTOM -->
+
+                    <article class="wd-package-card">
+
+                        <div class="wd-package-label">
                             CUSTOM
-                        </span>
+                        </div>
+
 
                         <h3>
-                            Tailored Digital Solution
+                            Built Around Your Requirements
                         </h3>
+
 
                         <p>
 
-                            For businesses with specialised
-                            requirements, advanced features
-                            or a unique website structure.
+                            For businesses with specialised requirements,
+                            larger projects or unique digital objectives.
 
                         </p>
+
 
                         <ul>
 
                             <li>
-                                Custom Requirements
+                                Custom Website Strategy
                             </li>
 
                             <li>
-                                Tailored Functionality
+                                Tailored User Experience
                             </li>
 
                             <li>
@@ -1141,24 +1578,31 @@
                             </li>
 
                             <li>
-                                Scalable Development
+                                Custom Features
+                            </li>
+
+                            <li>
+                                Business-Specific Integrations
+                            </li>
+
+                            <li>
+                                Flexible Project Scope
                             </li>
 
                         </ul>
 
-                        <a href="#contact"
-                            class="package-link">
 
-                            Discuss Your Requirement
+                        <a
+                            href="#contact"
+                            class="wd-package-link"
+                        >
+                            Discuss Your Project
                             <span>→</span>
-
                         </a>
 
                     </article>
 
-
                 </div>
-
 
             </div>
 
@@ -1172,23 +1616,33 @@
 
         <section class="faq-section">
 
-            <div class="container">
+            <div class="container faq-container">
 
 
-                <div class="section-heading centered">
+                <div class="faq-heading">
 
                     <div class="eyebrow">
                         FREQUENTLY ASKED QUESTIONS
                     </div>
 
+
                     <h2>
-
-                        Website development,
-                        <span>made clearer.</span>
-
+                        Questions Before
+                        <span>
+                            Starting Your Project?
+                        </span>
                     </h2>
 
+
+                    <p>
+
+                        Here are answers to some common questions about
+                        our website development and digital solutions.
+
+                    </p>
+
                 </div>
+
 
 
                 <div class="faq-list">
@@ -1196,153 +1650,169 @@
 
                     <div class="faq-item">
 
-                        <button class="faq-question"
-                            type="button">
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
 
                             <span>
-                                How much does a website cost?
+                                What types of websites do you build?
                             </span>
 
-                            <span class="faq-symbol">
+                            <span class="faq-icon">
                                 +
                             </span>
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <p>
 
-                                The cost depends on the number
-                                of pages, design requirements,
-                                functionality and overall scope.
-                                After understanding your needs,
-                                we can recommend a suitable
-                                solution and provide a quotation.
+                                We build professional business websites,
+                                service websites, portfolio websites,
+                                landing pages and customised digital
+                                solutions based on specific requirements.
 
                             </p>
 
                         </div>
 
                     </div>
+
 
 
                     <div class="faq-item">
 
-                        <button class="faq-question"
-                            type="button">
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
 
                             <span>
-                                How long does it take to develop a website?
+                                Will my website work on mobile devices?
                             </span>
 
-                            <span class="faq-symbol">
+                            <span class="faq-icon">
                                 +
                             </span>
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <p>
 
-                                Timelines depend on the size and
-                                complexity of the project, as
-                                well as the availability of
-                                content and feedback during
-                                development.
+                                Yes. Websites are designed to be responsive
+                                and adapt across desktop, tablet and mobile
+                                devices.
 
                             </p>
 
                         </div>
 
                     </div>
+
 
 
                     <div class="faq-item">
 
-                        <button class="faq-question"
-                            type="button">
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
 
                             <span>
-                                Will my website work on mobile phones?
+                                How long does it take to build a website?
                             </span>
 
-                            <span class="faq-symbol">
+                            <span class="faq-icon">
                                 +
                             </span>
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <p>
 
-                                Yes. Websites are designed with
-                                responsive layouts so they adapt
-                                across desktop, tablet and mobile
-                                screen sizes.
+                                The timeline depends on the size, complexity
+                                and requirements of the project. A clear
+                                estimated timeline can be discussed once
+                                the project scope is understood.
 
                             </p>
 
                         </div>
 
                     </div>
+
 
 
                     <div class="faq-item">
 
-                        <button class="faq-question"
-                            type="button">
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
 
                             <span>
-                                Can I update my website later?
+                                Can you redesign my existing website?
                             </span>
 
-                            <span class="faq-symbol">
+                            <span class="faq-icon">
                                 +
                             </span>
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <p>
 
-                                Depending on the website structure,
-                                future content updates and ongoing
-                                maintenance assistance can be
-                                arranged separately.
+                                Yes. An existing website can be reviewed
+                                and redesigned to improve its appearance,
+                                usability, responsiveness and overall
+                                digital presentation.
 
                             </p>
 
                         </div>
 
                     </div>
+
 
 
                     <div class="faq-item">
 
-                        <button class="faq-question"
-                            type="button">
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
 
                             <span>
-                                Can you help with domain and hosting?
+                                Will I need to arrange hosting and a domain?
                             </span>
 
-                            <span class="faq-symbol">
+                            <span class="faq-icon">
                                 +
                             </span>
 
                         </button>
 
+
                         <div class="faq-answer">
 
                             <p>
 
-                                Yes. Guidance can be provided for
-                                domain connection, hosting and
-                                launching the completed website.
+                                If you already have a domain and hosting,
+                                they can be used for your project.
+                                Otherwise, guidance can be provided on
+                                selecting and setting up suitable options.
 
                             </p>
 
@@ -1350,9 +1820,43 @@
 
                     </div>
 
+
+
+                    <div class="faq-item">
+
+                        <button
+                            class="faq-question"
+                            type="button"
+                        >
+
+                            <span>
+                                How do I get started?
+                            </span>
+
+                            <span class="faq-icon">
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+
+                                Simply get in touch and share some basic
+                                information about your business, services
+                                and website requirements. From there, the
+                                project scope and suitable approach can
+                                be discussed.
+
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
-
 
             </div>
 
@@ -1361,62 +1865,63 @@
 
 
         <!-- =====================================================
-             FINAL CTA
+             FINAL CTA / CONTACT
         ====================================================== -->
 
-        <section class="main-contact-section"
-            id="contact">
+        <section
+            class="wd-contact-section"
+            id="contact"
+        >
 
-            <div class="container main-contact-inner">
+            <div class="wd-contact-glow"></div>
 
 
-                <div class="main-contact-content">
+            <div class="container wd-contact-container">
 
-                    <div class="eyebrow light">
-                        START YOUR PROJECT
+
+                <div class="wd-contact-content">
+
+                    <div class="eyebrow-light">
+                        LET'S BUILD SOMETHING PROFESSIONAL
                     </div>
+
 
                     <h2>
-
-                        Your business deserves
-                        <span>more than a basic website.</span>
-
+                        Ready to Build a Website
+                        <span>
+                            That Works for Your Business?
+                        </span>
                     </h2>
+
 
                     <p>
 
-                        Let’s discuss your business, understand
-                        what you need and explore the right
-                        website solution for your goals.
+                        Whether you are starting from scratch, improving
+                        your current website or planning a new digital
+                        project, let's discuss the right solution for
+                        your business.
 
                     </p>
 
 
-                    <div class="contact-buttons">
+                    <div class="wd-contact-actions">
 
-                        <a href="https://wa.me/917973666876?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20website%20project."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-gold">
-
-                            Start on WhatsApp
-
-                            <span>
-                                →
-                            </span>
-
+                        <a
+                            href="mailto:info@kdsrconsultation.com"
+                            class="btn btn-gold"
+                        >
+                            Email Us
+                            <span>→</span>
                         </a>
 
 
-                        <a href="mailto:info@kdsrconsultation.com?subject=Website%20Development%20Enquiry"
-                            class="btn btn-light-outline">
-
-                            Email Your Requirement
-
-                            <span>
-                                →
-                            </span>
-
+                        <a
+                            href="https://wa.me/917973666876"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-outline-light"
+                        >
+                            WhatsApp Us
                         </a>
 
                     </div>
@@ -1424,27 +1929,48 @@
                 </div>
 
 
-                <div class="contact-brand-card">
+                <div class="wd-contact-details">
 
-                    <img src="logo.png"
-                        alt="KDSR Consultation Logo">
 
-                    <div class="brand-card-line"></div>
+                    <div class="wd-contact-detail">
 
-                    <strong>
-                        KDSR CONSULTATION
-                    </strong>
+                        <span>
+                            EMAIL
+                        </span>
 
-                    <span>
-                        Website Development & Digital Solutions
-                    </span>
+                        <a href="mailto:info@kdsrconsultation.com">
+                            info@kdsrconsultation.com
+                        </a>
 
-                    <p>
-                        kdsrconsultation.com
-                    </p>
+                    </div>
+
+
+                    <div class="wd-contact-detail">
+
+                        <span>
+                            PHONE / WHATSAPP
+                        </span>
+
+                        <a href="tel:+917973666876">
+                            +91 79736 66876
+                        </a>
+
+                    </div>
+
+
+                    <div class="wd-contact-detail">
+
+                        <span>
+                            WEBSITE
+                        </span>
+
+                        <a href="index.html">
+                            kdsrconsultation.com
+                        </a>
+
+                    </div>
 
                 </div>
-
 
             </div>
 
@@ -1461,95 +1987,131 @@
 
     <footer class="site-footer">
 
+        <div class="container">
 
-        <div class="container footer-grid">
+
+            <div class="footer-main">
 
 
-            <div class="footer-brand">
+                <div class="footer-brand">
 
-                <img src="logo.png"
-                    alt="KDSR Consultation Logo"
-                    class="footer-logo">
+                    <a
+                        href="index.html"
+                        class="footer-logo-link"
+                    >
+
+                        <img
+                            src="images/logo.png"
+                            alt="KDSR Consultation"
+                            class="footer-logo"
+                        >
+
+                    </a>
+
+
+                    <p>
+
+                        Professional solutions for share recovery,
+                        shareholder assistance and modern digital
+                        development.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Services
+                    </h3>
+
+
+                    <a href="share-recovery.html">
+                        Share Recovery
+                    </a>
+
+                    <a href="share-recovery.html">
+                        IEPF Claims
+                    </a>
+
+                    <a href="website-development.html">
+                        Website Development
+                    </a>
+
+                    <a href="website-development.html">
+                        Digital Solutions
+                    </a>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="index.html#about">
+                        About Us
+                    </a>
+
+                    <a href="#solutions">
+                        Website Solutions
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+
+                    <a href="mailto:info@kdsrconsultation.com">
+                        info@kdsrconsultation.com
+                    </a>
+
+                    <a href="tel:+917973666876">
+                        +91 79736 66876
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/917973666876"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
 
                 <p>
-
-                    Professional website development and
-                    digital solutions for businesses,
-                    professionals and organisations.
-
-                </p>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Website Solutions
-                </h3>
-
-                <a href="#solutions">
-                    Our Solutions
-                </a>
-
-                <a href="#contact">
-                    Start a Project
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    KDSR Consultation
-                </h3>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="share-recovery.html">
-                    Share Recovery
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Connect
-                </h3>
-
-                <a href="mailto:info@kdsrconsultation.com">
-                    info@kdsrconsultation.com
-                </a>
-
-                <a href="https://wa.me/917973666876"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    WhatsApp
-
-                </a>
-
-            </div>
-
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <div class="container footer-bottom-inner">
-
-                <p>
-
                     © <span id="currentYear"></span>
-                    KDSR Consultation. All Rights Reserved.
-
+                    KDSR Consultation. All rights reserved.
                 </p>
+
 
                 <p>
                     Recovering Wealth. Restoring Trust.
@@ -1559,42 +2121,31 @@
 
         </div>
 
-
     </footer>
 
 
 
-    <!-- FLOATING WHATSAPP -->
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
 
-    <a href="https://wa.me/917973666876?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20website%20project."
-        class="floating-whatsapp"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with us on WhatsApp">
-
-        <span>◉</span>
-
-        <span class="whatsapp-text">
-            Start a Project
-        </span>
-
-    </a>
-
-
-
-    <!-- BACK TO TOP -->
-
-    <button class="back-to-top"
+    <button
+        class="back-to-top"
         id="backToTop"
+        aria-label="Back to top"
         type="button"
-        aria-label="Back to top">
-
+    >
         ↑
-
     </button>
 
 
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script src="script.js"></script>
+
 
 </body>
 
